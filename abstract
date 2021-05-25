@@ -1,0 +1,73 @@
+#include<iostream>
+
+using namespace std;
+
+class Shape {
+
+public:
+
+virtual void numberOfSides () = 0;
+
+class Trapezoid: public Shape {
+
+int side = 4;
+
+public:
+
+void numberOfSides () {
+
+cout << "No. of sides in trapezoid are " << side << endl;
+
+};
+
+class Triangle public Shape {
+
+int side = 3;
+
+public:
+
+void numberOfSides () {
+
+cout << "No. of sides in triangle are " << side << endl;
+
+class Hexagon public Shape {
+
+int side =
+
+public:
+
+6;
+
+void numberOfSides ()
+
+};
+
+{
+
+cout << "No. of sides in hexagon are " << side << endl;
+
+int main()
+
+Shape* sh;
+
+Trapezoid trap;
+
+Triangle tri;
+
+Hexagon hex;
+
+sh = &trap;
+
+trap.numberOfSides();
+
+sh = &tri;
+
+tri.numberOfSides();
+
+sh = &hex;
+
+hex.numberOfSides();
+
+return 0;
+
+}
